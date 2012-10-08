@@ -1,0 +1,10 @@
+{
+  "name": "Fast TDD in Rails",
+  "description": "Some useful tips and tricks",
+  "sections": [
+    {"section": "intro"},
+    {"section": "why_so_slow"},
+    {"section": "how_we_can_improve_it"},
+    {"section": "outro"}
+  ]
+}
