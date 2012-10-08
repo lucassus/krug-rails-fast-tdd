@@ -1,0 +1,90 @@
+How to speed up TDD in Rails?
+
+# Rails boot is the constant!
+TODO simple benchmark
+
+# better uP, more RAM, SSD disk
+# install patched ruby interpreter
+
+```
+	$ rvm list
+
+	rvm rubies
+
+	   ruby-1.9.3-p194 [ x86_64 ]
+	=* ruby-1.9.3-p194-perf [ x86_64 ]
+
+Patched ruby 1.9.3-p194 for 30% faster rails boot: https://gist.github.com/2600122
+
+## Benchmarks
+TODO
+
+# use spork, spin, zeus..
+
+https://github.com/sporkrb/spork
+* A DRb server for testing frameworks (RSpec / Cucumber currently) that forks before each run to ensure a clean testing state.
+* preloading and forking
+
+## crazy spork hacks
+
+```
+	Spork.each_run do
+	  # This code will be run each time you run your specs.
+
+	  ActiveSupport::Dependencies.clear
+	  ActiveRecord::Base.instantiate_observers
+	  Locomotive::Application.reload_routes!
+	  FactoryGirl.reload
+
+	  # Workarounds for ActiveAdmin
+	  # see: https://github.com/gregbell/active_admin/issues/918#issuecomment-3741826
+
+	  ActiveAdmin.unload!
+	  ActiveAdmin.load!
+	end if Spork.using_spork?
+
+https://github.com/jstorimer/spin
+* Spin speeds up your Rails testing workflow by preloading your Rails environment.
+* By preloading your Rails environment in one process and then using fork(2) for each test run you don't load the same code over and over and over... Spin works with an autotest(ish) workflow.
+* There are two components to Spin, a server and client.
+* VS Spork
+** unobtrusive
+** It's simple (runs with any ROR app, without extra configuration)
+** It doesn't do any crazy monkey patching.
+
+https://github.com/burke/zeus
+* Boot any rails app in under a second.
+* does not work for me
+
+## Forking Rails?
+
+* introduces protential problems
+** preloading pre-fork
+** hacks
+* can introduce many subtle bugs
+
+# Do not load Rails
+
+* #10: FAST TESTS WITH AND WITHOUT RAILS: https://www.destroyallsoftware.com/screencasts/catalog/fast-tests-with-and-without-rails
+** https://github.com/garybernhardt/destroy-all-software-extras/blob/master/das-0010-fast-tests-with-and-without-rails/test
+
+# run specs in parallel
+
+# run some specs without Rails
+## mocking, stubbing
+## benchmark bundler
+## load only required libraries
+
+# use vcr for stub external API calls
+# how to find bottlenecks in our specs?
+## --profile
+## find slow fixtures
+
+# how to speed up integration specs?
+## mock Devise in integration specs
+## use capybara-webkit, phantomjs intead Selenium
+
+Resources:
+
+http://www.nateklaiber.com/blog/2012/08/29/refactoring-in-practice-speeding-up-your-rails-tests
+https://www.destroyallsoftware.com/screencasts/catalog/fast-tests-with-and-without-rails
