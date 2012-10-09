@@ -1,7 +1,7 @@
 !SLIDE title small
-# Kim jestem? #
 
-## Łukasz Bandzarewicz
+# Łukasz Bandzarewicz
+
 ### lukasz.bandzarewicz@gmail.com
 ### http://github.com/lucassus
 ### @lucassus

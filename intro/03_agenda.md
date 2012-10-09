@@ -1,5 +1,13 @@
-!SLIDE bullets incremental
+!SLIDE bullets
+
+# Why does test speed matter?
+
+![It's testing](testing.png)
+
+!SLIDE bullets
+
 # Agenta #
 
-* Dlaczego TDD w Rails jest wolne
-* Jak je można przyspieszyć
+* Why TDD in Rails is so slow?
+* How can we speed this up?
+* Some tips and tricks 

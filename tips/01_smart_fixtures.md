@@ -1,0 +1,2 @@
+!SLIDE
+# Smart fixtures

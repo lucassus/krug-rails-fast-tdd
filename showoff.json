@@ -3,8 +3,10 @@
   "description": "Some useful tips and tricks",
   "sections": [
     {"section": "intro"},
-    {"section": "why_so_slow"},
-    {"section": "how_we_can_improve_it"},
+    {"section": "slow_rails_boot"},
+    {"section": "spork_spine_zeus"},
+    {"section": "no_rails"},
+    {"section": "tips"},
     {"section": "outro"}
   ]
 }
