@@ -1,2 +1,2 @@
 !SLIDE title subsection
-# Fast TDD in Rails #
+# Fast(er) TDD in Rails #

@@ -3,12 +3,10 @@
 # [Spin](https://github.com/jstorimer/spin)
 
 * Preloading your Rails environment.
-* There are two components to Spin, a server and client.
 
 ## Spin vs Spork
 
-* Unobtrusive (we don't have to modify spec_helper.rb)
-* It's simple (runs with any ROR app, without extra configuration)
+* Simple and unobtrusive (we don't have to modify spec_helper.rb)
 * It doesn't do any crazy monkey patching.
 
 !SLIDE smaller

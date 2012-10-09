@@ -38,28 +38,6 @@
 
 !SLIDE smaller
 
-# Results
-
-## Before
-
-	@@@
-	$ rspec spec/ --tag api
-	Run options: include {:api=>true}
-	..........................................
-
-	Finished in 3 minutes 59.73 seconds
-
-## After
-
-	@@@
-	$ rspec spec/ --tag api
-	Run options: include {:api=>true}
-	..........................................
-
-	Finished in 1 minute 12.46 seconds
-
-!SLIDE smaller
-
 # Implementation
 
 ## Get mongodb inserts
@@ -85,3 +63,25 @@
     end
 
 ## [sources https://gist.github.com/3857230](https://gist.github.com/3857230)
+
+!SLIDE smaller
+
+# Results
+
+## Before
+
+	@@@
+	$ rspec spec/ --tag api
+	Run options: include {:api=>true}
+	..........................................
+
+	Finished in 3 minutes 59.73 seconds
+
+## After
+
+	@@@
+	$ rspec spec/ --tag api
+	Run options: include {:api=>true}
+	..........................................
+
+	Finished in 1 minute 12.46 seconds

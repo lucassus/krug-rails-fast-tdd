@@ -1,4 +1,4 @@
-!SLIDE title subsection smaller
+!SLIDE title subsection small
 
 # Target #4
 ## No rails
@@ -6,13 +6,16 @@
 ### spec_helper.rb
 
 	@@@ ruby
+	# ...
 	ENV["RAILS_ENV"] ||= 'test'
-	require File.expand_path("../../config/environment", __FILE__)
+	require File.expand_path("../../config/environment", 
+		__FILE__)
+	# ...
 
 ### spec/user_spec.rb
 
 	@@@ ruby
-	require 'spec_helper'
+	require 'spec_helper' # will load all dependencies
 	describe User do; end
 
 !SLIDE
@@ -23,3 +26,4 @@
 * [DAS, Fast tests with and withour rails](https://www.destroyallsoftware.com/screencasts/catalog/fast-tests-with-and-without-rails)
 * [Corey Haines: Fast Rails Tests](http://blog.moretea.nl/corey-haines-fast-rails-tests)
 * ..and many other
+* ..but they have some cons

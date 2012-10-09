@@ -3,6 +3,7 @@
 # Other tips
 
 * Selenium --> phantomjs, webkit
+* Run specs in parallel with [parallel_tests](https://github.com/grosser/parallel_tests)
 * Run specs with --profile parameter
 * Find [slow factories](https://gist.github.com/3857273)
 
@@ -19,7 +20,7 @@
 	it { should < 10 }
 	it { should < 12 }
 
-## Little faster
+## About x2 faster
 
 	@@@ ruby
 	it 'should be somewhere in the middle' do
