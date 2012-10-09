@@ -1,10 +1,10 @@
-!SLIDE bullets
+!SLIDE title subsection small
 
 # Why does test speed matter?
 
 ![It's testing](testing.png)
 
-!SLIDE bullets
+!SLIDE title subsection bullets
 
 # Agenta #
 

@@ -1,14 +1,15 @@
-!SLIDE smaller
+!SLIDE title subsection smaller
 
-# No rails
+# Target #4
+## No rails
 
-## spec_helper.rb
+### spec_helper.rb
 
 	@@@ ruby
 	ENV["RAILS_ENV"] ||= 'test'
 	require File.expand_path("../../config/environment", __FILE__)
 
-## spec/user_spec.rb
+### spec/user_spec.rb
 
 	@@@ ruby
 	require 'spec_helper'

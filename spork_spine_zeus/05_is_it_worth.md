@@ -1,8 +1,9 @@
 !SLIDE small
 
-# Is it woth?
+# Is it worth?
 
-* Introduces protential problems
+* Perfect for legacy projects
+* ..but it may ntroduce protential problems
 * Preloading pre-fork
 * Hacks
 * Can introduce many subtle bugs

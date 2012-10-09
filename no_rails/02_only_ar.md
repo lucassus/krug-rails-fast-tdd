@@ -1,6 +1,7 @@
-!SLIDE smaller
+!SLIDE title subsection smaller
 
-# Run only ActiveRecord
+# Target #5
+## Run only ActiveRecord
 
 	@@@ ruby
 	# rspec_models_helper.rb

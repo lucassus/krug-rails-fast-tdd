@@ -1,10 +1,9 @@
 !SLIDE small
-# Linki #
+# Links #
 
-## http://github.com/lucassus/__krug-rails-3.1-engines-slides__
-## http://github.com/lucassus/__krug_forum__
-## http://github.com/lucassus/__krug\_forum\_demo__
+## http://blog.bandzarewicz.com
+## http://github.com/lucassus/__krug-rails-fast-tdd__
 
 !SLIDE title
-# Pytania? #
+# Questions? #
 ## Flame war? ;) ##

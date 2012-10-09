@@ -1,4 +1,4 @@
-!SLIDE smaller
+!SLIDE title subsection smaller
 
 # Target #2
 ## gems load time

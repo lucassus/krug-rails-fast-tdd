@@ -1,4 +1,4 @@
-!SLIDE
+!SLIDE small
 
 # What is the current situation?
 ## rspec + rails 3.2 + mri 1.9.2

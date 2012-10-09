@@ -1,8 +1,7 @@
-!SLIDE
+!SLIDE small
 
-# Spork
+# [Spork](https://github.com/sporkrb/spork)
 
-* https://github.com/sporkrb/spork
 * A DRb server for testing frameworks (RSpec / Cucumber currently)
 * It forks a copy of the server each time you run your tests
 
@@ -38,12 +37,12 @@
 
 !SLIDE small
 
-# Spork has many cons
+# Spork is pretty fast but...
 
-* it's pretty fast but...
 * Does crazy Rails monkey-patching
 * Requires changing spec_helper.rb
 * Sometimes produces strange errors
+* Sometimes requires many hacks in Spork.each_run block
 
 !SLIDE smaller
 
